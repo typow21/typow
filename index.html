@@ -1,3 +1,23 @@
 <html>
-    <h1>Hello World</h1>
+    <body>
+        <div class = "log-form">
+            <script src="https://apis.google.com/js/platform.js" async defer></script>
+            <h1>Contacts Manager login</h1>
+            <form>
+                <label for = "user-name">Username:</label>
+                <input type = "text" id = "user-name">
+                <br>
+                <br>
+                <label for="password">Password:</label>
+                <input type= "text" id = "password">
+            </form>
+            <meta name="google-signin-client_id" content="874179489122-i58l9gta4cqrfkupu5ti4271am8oclu9.apps.googleusercontent.com">
+            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <button type="submit" class = "button" onclick="window.location.href = './index.html'">Submit</button>
+            <br>
+            <br>
+            <button class = "button" onclick= "window.location.href = './create-profile.html'">Create profile</button>
+            <button class = "button" onclick= "window.location.href = './forgotpassword.html'">Forgot password</button>
+        </div>
+    </body>
 </html>
